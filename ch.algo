@@ -1,0 +1,25 @@
+ALGORITHM sentenc
+VAR
+   sentence: STRING:='hello world how are you my name is chedli.';
+   len:INTEGER;
+   word:STRING;
+   i,J,k:INTEGER;
+   a,e,o,u,i:CHAR;
+BEGIN
+ FOR i FROM 0 TO sentence.length STEP step  DO
+Read(sentence[i])
+ END_FOR
+words:=sentence.split('');
+ a,e,o,u,i:CHAR;
+FUNCTION count_vowels(sentence) : return_type
+VAR
+   a,e,o,u,i:CHAR;
+   vowel_count:INTEGER:=0
+BEGIN
+ FOR k FROM 0 TO sentence.length STEP STEP DO
+IF (sentence[K]===a||sentence[K]===e||sentence[K]===o||sentence[K]===u||sentence[K]===i
+vowel_count++
+     RETURN vowel_count ;
+END
+
+END
